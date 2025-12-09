@@ -1,0 +1,17 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="15" fill="#2e8555" stroke="#fff" stroke-width="2"/>
+  
+  <!-- Document icon -->
+  <rect x="9" y="7" width="12" height="16" rx="1" fill="white"/>
+  <rect x="9" y="7" width="12" height="3" rx="1" fill="#1a5f3f"/>
+  
+  <!-- Text lines -->
+  <rect x="11" y="13" width="8" height="1" rx="0.5" fill="#2e8555"/>
+  <rect x="11" y="15" width="6" height="1" rx="0.5" fill="#2e8555"/>
+  <rect x="11" y="17" width="7" height="1" rx="0.5" fill="#2e8555"/>
+  <rect x="11" y="19" width="5" height="1" rx="0.5" fill="#2e8555"/>
+  
+  <!-- Small decorative element -->
+  <circle cx="18" cy="8.5" r="1" fill="white"/>
+</svg>

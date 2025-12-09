@@ -82,6 +82,18 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        indexDocs: true,
+        indexPages: true,
+        docsRouteBasePath: '/docs',
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -91,24 +103,55 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'Markdown Tutorial',
+        title: 'Dog Blog',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Dog Blog Logo',
+          src: 'img/custom-logo.svg',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Showcase',
           },
-          // {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            to: '/docs/intro',
+            label: 'Docs',
+            position: 'left',
+          },
+          {
+            to: '/docs/my-first-markdown',
+            label: 'Blog',
+            position: 'left',
+          },
+          {
+            to: '/docs/my-first-mdx',
+            label: 'Templates',
+            position: 'left',
+          },
+          {
+            to: '/docs/intro',
+            label: 'Enterprise',
+            position: 'left',
+          },
+          {
+            type: 'search',
+            position: 'right',
+          },
+          {
+            to: '/docs/intro',
+            label: 'Learn',
+            position: 'right',
+            className: 'header-learn-link',
+          },
           {
             href: 'https://github.com/Pawina85/notes',
             label: 'GitHub',
             position: 'right',
           },
+          // {to: '/blog', label: 'Blog', position: 'left'},
+         
         ],
       },
       footer: {
