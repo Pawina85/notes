@@ -28,6 +28,33 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Custom button style for Learn link */
+.header-learn-link {
+  background-color: var(--ifm-color-primary) !important;
+  color: white !important;
+  padding: 8px 16px !important;
+  border-radius: 6px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  margin-left: 8px !important;
+  transition: all 0.2s ease !important;
+}
+
+.header-learn-link:hover {
+  background-color: var(--ifm-color-primary-dark) !important;
+  color: white !important;
+  text-decoration: none !important;
+  transform: translateY(-1px) !important;
+}
+
+[data-theme='dark'] .header-learn-link {
+  background-color: var(--ifm-color-primary) !important;
+}
+
+[data-theme='dark'] .header-learn-link:hover {
+  background-color: var(--ifm-color-primary-light) !important;
+}
 .docusaurus-highlighted-code-line {
   background-color: rgba(0,0,0,0.1);
   display: block;
