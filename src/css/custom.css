@@ -1,67 +1,116 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  /* --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1); */
+  --dog-font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --dog-color-primary: #0f766e;        /* main brand color (greenish like Next) */
+  --dog-color-primary-soft: #ecfdf3;   /* soft background */
+  --dog-color-accent: #111827;         /* dark text */
+  --dog-color-muted: #6b7280;          /* secondary text */
+  --dog-radius-lg: 14px;
+  --dog-radius-md: 10px;
+  --dog-radius-pill: 999px;
+
+  /* hook into Docusaurus theme */
+  --ifm-font-family-base: var(--dog-font-sans);
+  --ifm-color-primary: var(--dog-color-primary);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --dog-color-primary-soft: #022c22;
 }
 
-/* Custom button style for Learn link */
+/* Generic page layout for docs */
+.dog-page {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.dog-page-header {
+  margin-bottom: 1.75rem;
+}
+
+.dog-kicker {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--dog-color-muted);
+  font-weight: 500;
+}
+
+.dog-heading-xl {
+  font-size: 2.25rem;
+  line-height: 1.1;
+  margin: 0.35rem 0 0.75rem;
+  color: var(--dog-color-accent);
+}
+
+.dog-subtitle {
+  font-size: 1rem;
+  color: var(--dog-color-muted);
+}
+
+/* Card grid */
+.dog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.dog-card {
+  padding: 1.1rem 1.2rem;
+  border-radius: var(--dog-radius-lg);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: white;
+}
+
+[data-theme='dark'] .dog-card {
+  background: #020617;
+  border-color: rgba(148, 163, 184, 0.4);
+}
+
+.dog-card-title {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.dog-card-body {
+  font-size: 0.92rem;
+  color: var(--dog-color-muted);
+}
+
+/* Learn button style in navbar */
 .header-learn-link {
-  background-color: var(--ifm-color-primary) !important;
-  color: white !important;
-  padding: 8px 16px !important;
-  border-radius: 6px !important;
-  font-weight: 600 !important;
-  text-decoration: none !important;
-  margin-left: 8px !important;
-  transition: all 0.2s ease !important;
+  border-radius: var(--dog-radius-pill);
+  padding: 0.3rem 0.9rem;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  margin-left: 0.5rem;
 }
 
+/* Optional: give the Learn button a filled style on hover */
 .header-learn-link:hover {
-  background-color: var(--ifm-color-primary-dark) !important;
+  background: var(--dog-color-primary);
   color: white !important;
-  text-decoration: none !important;
-  transform: translateY(-1px) !important;
 }
 
-[data-theme='dark'] .header-learn-link {
-  background-color: var(--ifm-color-primary) !important;
+/* Small pill badge */
+.dog-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.7rem;
+  border-radius: var(--dog-radius-pill);
+  background: var(--dog-color-primary-soft);
+  color: var(--dog-color-primary);
+  font-size: 0.78rem;
+  font-weight: 500;
 }
 
-[data-theme='dark'] .header-learn-link:hover {
-  background-color: var(--ifm-color-primary-light) !important;
+/* Code block tweak */
+.dog-inline-code {
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.35rem;
+  background: #1118270d;
 }
-.docusaurus-highlighted-code-line {
-  background-color: rgba(0,0,0,0.1);
-  display: block;
-  margin: 0 calc(-1 *var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
-}
-html[data-theme='dark'] .docusaurus-highlighted-code-line {
-  background-color: rgba(0, 0, 0, 0.3);
-}
+
 
