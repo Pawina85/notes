@@ -59,7 +59,7 @@ const config = {
           editUrl:
             'https://github.com/Pawina85/notes/tree/main/',
         },
-        blog:false,
+        blog: {},
         // blog: {
         //   showReadingTime: true,
         //   feedOptions: {
@@ -121,17 +121,17 @@ const config = {
             position: 'left',
           },
           {
-            to: '/docs/my-first-markdown',
+            to: '/blog',
             label: 'Blog',
             position: 'left',
           },
           {
-            to: '/docs/my-first-mdx',
+            to: '/docs/templates',
             label: 'Templates',
             position: 'left',
           },
           {
-            to: '/docs/intro',
+            to: '/docs/enterprise',
             label: 'Enterprise',
             position: 'left',
           },
@@ -140,7 +140,7 @@ const config = {
             position: 'right',
           },
           {
-            to: '/docs/intro',
+            to: '/docs/learn',
             label: 'Learn',
             position: 'right',
             className: 'header-learn-link',
