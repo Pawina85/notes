@@ -110,10 +110,9 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
+            to: '/docs/showcase',
             label: 'Showcase',
+            position: 'left',
           },
           {
             to: '/docs/intro',
