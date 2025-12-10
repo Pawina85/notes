@@ -2,14 +2,33 @@
 title: Docs Overview
 ---
 
-# Documentation
+<div class="dog-page">
 
-Welcome to the documentation section
-This is a **Markdown** (.md) file  - simple and clean.
+<div class="dog-page-header">
+<div class="dog-kicker">Documentation</div>
+<h1 class="dog-heading-xl">Start with the basic</h1>
+<p class="dog-subtitle">Learn how this site is structured using plain Markdown files, before we move to MDX and React-powered</p>
+</div>
 
-##What's inside?
-- Introduction
-- Basic tutorials
-- Advanced guides
+## What lives in the docs?
 
-Markdown is perfect when you don't need React components.
+- **Showcase** - highlights the main features.
+- **Templates** - reusable patterns you can copy.
+- **Enterprise** - notes for production / teams.
+- **Learn** - a quick tour of how the docs are built.
+
+---
+
+## Markdown only
+
+This page is a <code class="dog-inline-code">.md</code> file, not MDX
+
+That means:
+
+-No React components
+-Just heading, lists, paragraphs, and links
+-Styling is done via global CSS classes, like 
+ <code class="dog-inline-code">dog-page</code> and
+ <code class="dog-inline-code">dog-card</code>
+
+</div>
