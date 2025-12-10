@@ -2,15 +2,48 @@
 title: Templates
 ---
 
-# Templates
+import React from 'react'
 
-This page is create with **MDX** which allows embedding custom UI.
+<div className="dog-page">
 
-> Use templates to quickly build pages or components.
+<div className="dog-page-haeder">
+  <div className="dog-kicker">Templates</div>
+  <h1 className="dog-heading-xl">Reusable content patterns</h1>
+  <p>This page is written in <code className="dog-inline-code">.mdx</code>, so we can mix Mardown with React components.</p>
+</div>
+
+## When to use a template?
+
+Templates are useful when you want:
+- consitent layout across pages
+- shared styling via global variables
+- easy copy-paste for teammates
+
+<div className="dog-grid">
+<div ClassName="dog-card">
+<div className="dog-card-title">Feature page</div>
+<p className="dog-card-body">A layout explaining a singer feature with overview, code sample, and limitations.</p>
+</div>
+<div ClassName="dog-card">
+<div className="dog-card-title">How-to guide</div>
+<p className="dog-card-body">
+        A step-by-step flow focused on task completion, ideal for onboarding.
+      </p>
+</div>
+<div className="dog-card">
+      <div className="dog-card-title">Reference</div>
+      <p className="dog-card-body">
+        A structured list of options, props, or API endpoints.
+      </p>
+    </div>
+</div>
 
 ## Example Templates
 
-```htnl 
+```html 
 <div class="template-box">
 Template content goes Here
+</div>
+```
+
 </div>
