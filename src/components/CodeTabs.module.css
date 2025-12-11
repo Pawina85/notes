@@ -1,0 +1,29 @@
+.wrapper {
+  margin: 1.5rem 0;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: var(--dog-radius-lg);
+}
+
+.tabHeader {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.tabBtn {
+  padding: 0.4rem 1rem;
+  border-radius: var(--dog-radius-pill);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.active {
+  background: var(--dog-color-primary);
+  color: white;
+}
+
+.codeBlock {
+  padding: 1rem;
+  font-size: 0.9rem;
+}
