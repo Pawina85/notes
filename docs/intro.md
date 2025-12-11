@@ -1,11 +1,10 @@
 ---
+title: "Welcome to Notes"
 sidebar_position: 1
 slug: /
 ---
 
-# Tutorial Intro
-
-Let's discover **Markdown**!
+Welcome to Notes — let's discover **Markdown** and our **documentation platform**!
 
 ## Getting Started 
 

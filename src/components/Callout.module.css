@@ -1,26 +1,129 @@
 .callout {
-  padding: 1rem 1.25rem;
-  border-radius: var(--dog-radius-md);
-  margin: 1.2rem 0;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;
   border-left: 4px solid;
+  background: var(--ifm-color-content-inverse);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.info {
-  background: #eff6ff;
-  border-color: #3b82f6;
+.calloutHeader {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.warning {
-  background: #fff7ed;
-  border-color: #f97316;
+.calloutContent {
+  margin: 0;
+  line-height: 1.6;
 }
 
-.tip {
-  background: #ecfdf5;
-  border-color: #10b981;
+.calloutContent p:last-child {
+  margin-bottom: 0;
 }
 
-.danger {
-  background: #fef2f2;
-  border-color: #ef4444;
+.calloutContent p:first-child {
+  margin-top: 0;
+}
+
+/* Info callout (default) */
+.callout--info {
+  border-left-color: var(--ifm-color-info);
+  background: var(--ifm-color-info-lightest);
+}
+
+.callout--info .calloutHeader {
+  color: var(--ifm-color-info-dark);
+}
+
+.callout--info .calloutHeader::before {
+  content: "ℹ️";
+  margin-right: 0.25rem;
+}
+
+/* Warning callout */
+.callout--warning {
+  border-left-color: var(--ifm-color-warning);
+  background: var(--ifm-color-warning-lightest);
+}
+
+.callout--warning .calloutHeader {
+  color: var(--ifm-color-warning-dark);
+}
+
+.callout--warning .calloutHeader::before {
+  content: "⚠️";
+  margin-right: 0.25rem;
+}
+
+/* Danger callout */
+.callout--danger {
+  border-left-color: var(--ifm-color-danger);
+  background: var(--ifm-color-danger-lightest);
+}
+
+.callout--danger .calloutHeader {
+  color: var(--ifm-color-danger-dark);
+}
+
+.callout--danger .calloutHeader::before {
+  content: "⛔";
+  margin-right: 0.25rem;
+}
+
+/* Success callout */
+.callout--success {
+  border-left-color: var(--ifm-color-success);
+  background: var(--ifm-color-success-lightest);
+}
+
+.callout--success .calloutHeader {
+  color: var(--ifm-color-success-dark);
+}
+
+.callout--success .calloutHeader::before {
+  content: "✅";
+  margin-right: 0.25rem;
+}
+
+/* Tip callout */
+.callout--tip {
+  border-left-color: var(--ifm-color-primary);
+  background: var(--ifm-color-primary-lightest);
+}
+
+.callout--tip .calloutHeader {
+  color: var(--ifm-color-primary-dark);
+}
+
+.callout--tip .calloutHeader::before {
+  content: "💡";
+  margin-right: 0.25rem;
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .callout {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .callout--info {
+  background: rgba(84, 199, 236, 0.1);
+}
+
+[data-theme='dark'] .callout--warning {
+  background: rgba(255, 186, 84, 0.1);
+}
+
+[data-theme='dark'] .callout--danger {
+  background: rgba(250, 56, 62, 0.1);
+}
+
+[data-theme='dark'] .callout--success {
+  background: rgba(0, 210, 144, 0.1);
+}
+
+[data-theme='dark'] .callout--tip {
+  background: rgba(37, 194, 160, 0.1);
 }
