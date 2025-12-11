@@ -1,0 +1,21 @@
+.card {
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: var(--dog-radius-lg);
+  padding: 1.4rem;
+  background: white;
+}
+
+[data-theme='dark'] .card {
+  background: #0f172a;
+}
+
+.title {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: var(--dog-color-accent);
+}
+
+.body {
+  color: var(--dog-color-muted);
+  font-size: 0.95rem;
+}

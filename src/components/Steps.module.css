@@ -1,0 +1,19 @@
+.steps {
+  border-left: 2px solid var(--dog-color-primary);
+  margin-left: 1rem;
+  padding-left: 1.5rem;
+}
+
+.step {
+  margin-bottom: 1.8rem;
+}
+
+.step h3 {
+  margin: 0;
+  color: var(--dog-color-accent);
+}
+
+.content {
+  margin-top: 0.4rem;
+  color: var(--dog-color-muted);
+}

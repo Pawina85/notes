@@ -1,19 +1,14 @@
----
-id: showcase
-title: Showcase Page
-description: A working MDX page without errors.
----
+import FeatureCard from '@site/src/components/FeatureCard'
 
+<div className="dog-grid">
+<FeatureCard title="Markdown">
+</FeatureCard>
 
-# Showcase Page
+<FeatureCard title="MDX Power">
+ Mix React components directly inside your documentation.
+ </FeatureCard>
 
-This is an MDX example page.
-MDX allows **JSX components** inside Markdown
-
-<button onClick={() => alert("Hello from Showcase!")}>
-   Click me
-</button>
-
-Here is an example component:
-
-
+ <FeatureCard title="Global Styles">
+    UI stays consistent thanks to CSS variables defined in `custom.css`.
+  </FeatureCard>
+</div>
