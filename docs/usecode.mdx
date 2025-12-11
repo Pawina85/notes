@@ -1,18 +1,126 @@
 ---
 title: Code Examples
 description: Interactive code examples and snippets
+sidebar_position: 3
 ---
 
 # Code Examples
 
-Here are some interactive code examples:
+Here are some interactive code examples and useful snippets.
 
 import CodeTabs from '@site/src/components/CodeTabs';
+import Callout from '@site/src/components/Callout';
+
+## Interactive Code Tabs
 
 <CodeTabs
 tabs={{
-    Javascript: `console.log("Hello JS")`,
-    TypeScript: `console.log("Hello TS")`,
-    Bash: `echo "Hello Terminal"`
+    Javascript: `// JavaScript Example
+const greeting = "Hello World!";
+console.log(greeting);
+
+// Function example
+function calculateSum(a, b) {
+    return a + b;
+}
+
+const result = calculateSum(5, 3);
+console.log('Sum:', result);`,
+    
+    TypeScript: `// TypeScript Example
+interface User {
+    name: string;
+    age: number;
+}
+
+const user: User = {
+    name: "John Doe",
+    age: 30
+};
+
+function greetUser(user: User): string {
+    return "Hello " + user.name + ", you are " + user.age + " years old!";
+}
+
+console.log(greetUser(user));`,
+    
+    Python: `# Python Example
+def calculate_sum(a, b):
+    """Calculate the sum of two numbers"""
+    return a + b
+
+def greet_user(name, age):
+    return f"Hello {name}, you are {age} years old!"
+
+# Usage
+result = calculate_sum(5, 3)
+print(f"Sum: {result}")
+
+user_greeting = greet_user("John Doe", 30)
+print(user_greeting)`,
+    
+    Bash: `#!/bin/bash
+# Bash Script Example
+
+echo "Hello World!"
+
+# Variables
+NAME="John Doe"
+AGE=30
+
+# Function
+greet_user() {
+    local name=$1
+    local age=$2
+    echo "Hello $name, you are $age years old!"
+}
+
+# Usage
+greet_user "$NAME" "$AGE"`
+}}
+/>
+
+<Callout type="info" title="Code Examples">
+These examples demonstrate basic syntax and patterns in different programming languages.
+</Callout>
+
+## Simple Examples
+
+### Variables and Functions
+
+<CodeTabs
+tabs={{
+    Javascript: `// Variables
+let message = "Hello";
+const count = 42;
+
+// Function
+function multiply(x, y) {
+    return x * y;
+}
+
+console.log(multiply(6, 7));`,
+    
+    Python: `# Variables
+message = "Hello"
+count = 42
+
+# Function
+def multiply(x, y):
+    return x * y
+
+print(multiply(6, 7))`,
+    
+    Bash: `# Variables
+MESSAGE="Hello"
+COUNT=42
+
+# Function
+multiply() {
+    echo $(($1 * $2))
+}
+
+result=$(multiply 6 7)
+echo $result`
 }}
 />

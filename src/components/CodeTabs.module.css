@@ -1,29 +1,63 @@
-.wrapper {
-  margin: 1.5rem 0;
-  border: 1px solid rgba(148, 163, 184, 0.35);
-  border-radius: var(--dog-radius-lg);
+.codeTabs {
+  margin: 1rem 0;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-code-border-radius);
+  overflow: hidden;
+  background: var(--ifm-color-content-inverse);
 }
 
-.tabHeader {
+.tabBar {
   display: flex;
-  gap: 0.5rem;
-  padding: 0.5rem;
+  background-color: var(--ifm-color-emphasis-100);
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  overflow-x: auto;
 }
 
-.tabBtn {
-  padding: 0.4rem 1rem;
-  border-radius: var(--dog-radius-pill);
+.tab {
+  background: none;
   border: none;
-  background: transparent;
+  padding: 0.75rem 1rem;
   cursor: pointer;
+  color: var(--ifm-color-content);
+  border-right: 1px solid var(--ifm-color-emphasis-300);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  min-width: fit-content;
 }
 
-.active {
-  background: var(--dog-color-primary);
+.tab:last-child {
+  border-right: none;
+}
+
+.tab:hover {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+.tab.active {
+  background-color: var(--ifm-color-primary);
   color: white;
+  font-weight: 600;
 }
 
 .codeBlock {
-  padding: 1rem;
-  font-size: 0.9rem;
+  margin: 0;
+}
+
+.codeBlock pre {
+  margin: 0;
+  border-radius: 0;
+  background: var(--ifm-color-content-inverse) !important;
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .codeTabs {
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+[data-theme='dark'] .tabBar {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+[data-theme='dark'] .tab:hover {
+  background-color: var(--ifm-color-emphasis-300);
 }
