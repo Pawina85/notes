@@ -6,53 +6,60 @@ import styles from "./index.module.css";
 export default function Home() {
   return (
     <Layout
-      title="Dog Blog"
-      description="A modern knowledge hub built with Docusaurus"
+      title="Pawina's Knowledge Hub"
+      description="A personal documentation and knowledge sharing platform"
     >
       <main className={styles.heroSection}>
         <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>A Better Way to Document Knowledge</h1>
+          <h1 className={styles.heroTitle}>Welcome to My Professional Knowledge Hub</h1>
           <p className={styles.heroSubtitle}>
-            Beautiful docs, clean UI, powerful MDX components — all powered by a
-            custom design system built on Docusaurus.
+            Explore my projects, technical documentation, learning notes, and professional insights. 
+            This is where I document my journey in software development and share valuable resources.
           </p>
 
           <div className={styles.heroButtons}>
-            <Link className={styles.primaryBtn} to="/docs/learn">
-              Start Learning →
+            <Link className={styles.primaryBtn} to="/docs/intro">
+              Explore Documentation →
             </Link>
-            <Link className={styles.secondaryBtn} to="/showcase">
-              View Showcase
+            <Link className={styles.secondaryBtn} to="/docs/showcase">
+              View Projects
             </Link>
           </div>
         </div>
       </main>
 
       <section className={styles.featuresSection}>
-        <h2 className="dog-heading-xl">Why Dog Blog?</h2>
+        <h2 className="dog-heading-xl">What You'll Find Here</h2>
         <p className="dog-subtitle">
-          A documentation experience designed to feel like a real product website.
+          A comprehensive collection of my professional work, learning journey, and technical insights.
         </p>
 
         <div className="dog-grid" style={{ marginTop: "2rem" }}>
           <div className="dog-card">
-            <div className="dog-card-title">Markdown + MDX</div>
+            <div className="dog-card-title">📚 Technical Documentation</div>
             <p className="dog-card-body">
-              The power of Markdown with the flexibility of React components.
+              Detailed guides, tutorials, and technical references from my development work.
             </p>
           </div>
 
           <div className="dog-card">
-            <div className="dog-card-title">Custom Design System</div>
+            <div className="dog-card-title">🚀 Project Showcase</div>
             <p className="dog-card-body">
-              Typography, colors, spacing — all controlled by global CSS variables.
+              Real-world projects with code examples, architecture decisions, and lessons learned.
             </p>
           </div>
 
           <div className="dog-card">
-            <div className="dog-card-title">Fast & Modern</div>
+            <div className="dog-card-title">💡 Learning Notes</div>
             <p className="dog-card-body">
-              Blazing fast development with Docusaurus, but redesigned to feel unique.
+              My continuous learning journey with new technologies, frameworks, and best practices.
+            </p>
+          </div>
+
+          <div className="dog-card">
+            <div className="dog-card-title">🛠️ Resources & Templates</div>
+            <p className="dog-card-body">
+              Reusable code snippets, project templates, and tools that make development faster.
             </p>
           </div>
         </div>

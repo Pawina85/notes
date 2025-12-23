@@ -3,17 +3,49 @@
 :root {
   --dog-font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 
-  --dog-color-primary: #0f766e;        /* main brand color (greenish like Next) */
-  --dog-color-primary-soft: #ecfdf3;   /* soft background */
-  --dog-color-accent: #111827;         /* dark text */
-  --dog-color-muted: #6b7280;          /* secondary text */
-  --dog-radius-lg: 14px;
-  --dog-radius-md: 10px;
+  /* Professional color scheme */
+  --dog-color-primary: #2563eb;        /* Professional blue */
+  --dog-color-primary-soft: #eff6ff;   /* Light blue background */
+  --dog-color-accent: #111827;         /* Dark text */
+  --dog-color-muted: #6b7280;          /* Secondary text */
+  --dog-color-success: #059669;        /* Success/complete actions */
+  --dog-color-warning: #d97706;        /* Warning/attention */
+  
+  --dog-radius-lg: 12px;
+  --dog-radius-md: 8px;
   --dog-radius-pill: 999px;
 
-  /* hook into Docusaurus theme */
+  /* Hook into Docusaurus theme */
   --ifm-font-family-base: var(--dog-font-sans);
   --ifm-color-primary: var(--dog-color-primary);
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  
+  /* Professional spacing */
+  --ifm-leading: 1.6;
+  --ifm-h1-font-size: 2.5rem;
+  --ifm-h2-font-size: 2rem;
+  --ifm-h3-font-size: 1.5rem;
+}
+
+[data-theme='dark'] {
+  --dog-color-primary-soft: #1e3a8a;
+  --dog-color-accent: #f9fafb;
+  --ifm-navbar-background-color: #1f2937;
+}
+
+/* Professional navigation styling */
+.navbar {
+  backdrop-filter: blur(8px);
+}
+
+.navbar__brand {
+  font-weight: 600;
+  color: var(--dog-color-primary) !important;
+}
+
+.navbar__item--right {
+  margin-left: 0.5rem;
 }
 
 [data-theme='dark'] {
@@ -111,6 +143,106 @@
   padding: 0.1rem 0.35rem;
   border-radius: 0.35rem;
   background: #1118270d;
+}
+
+/* Professional enhancements */
+/* Enhanced code blocks */
+.prism-code {
+  border-radius: var(--dog-radius-md);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Professional table styling */
+table {
+  border-radius: var(--dog-radius-md);
+  overflow: hidden;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Blog post styling */
+.blog-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-post__title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+/* Documentation navigation */
+.docs-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Professional badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--dog-radius-pill);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.badge--primary {
+  background: var(--dog-color-primary);
+  color: white;
+}
+
+.badge--success {
+  background: var(--dog-color-success);
+  color: white;
+}
+
+.badge--warning {
+  background: var(--dog-color-warning);
+  color: white;
+}
+
+/* Enhanced hero section */
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+/* Professional footer */
+.footer {
+  background: #1f2937;
+  border-top: 1px solid #374151;
+}
+
+.footer__title {
+  color: #f9fafb;
+  font-weight: 600;
+}
+
+.footer__item {
+  color: #d1d5db;
+}
+
+.footer__item:hover {
+  color: var(--dog-color-primary);
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .dog-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .dog-heading-xl {
+    font-size: 1.875rem;
+  }
+  
+  .blog-post__title {
+    font-size: 2rem;
+  }
 }
 
 

@@ -1,19 +1,44 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+react:
+  label: React
+  permalink: /react
+  description: React development tips and best practices
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+architecture:
+  label: Architecture
+  permalink: /architecture
+  description: Software architecture patterns and design decisions
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+frontend:
+  label: Frontend
+  permalink: /frontend
+  description: Frontend development techniques and tools
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+best-practices:
+  label: Best Practices
+  permalink: /best-practices
+  description: Coding best practices and professional development
+
+javascript:
+  label: JavaScript
+  permalink: /javascript
+  description: Modern JavaScript development and ES6+ features
+
+development:
+  label: Development
+  permalink: /development
+  description: Software development processes and methodologies
+
+tutorials:
+  label: Tutorials
+  permalink: /tutorials
+  description: Step-by-step guides and learning resources
+
+career:
+  label: Career
+  permalink: /career
+  description: Professional development and career growth
+
+tools:
+  label: Tools
+  permalink: /tools
+  description: Development tools and productivity tips
