@@ -1,3 +1,13 @@
+pawina:
+  name: Pawina Chanthachon
+  title: Software Developer & Technical Writer
+  url: https://github.com/Pawina85
+  image_url: https://github.com/Pawina85.png
+  page: true
+  socials:
+    github: Pawina85
+    linkedin: pawina-chanthachon
+
 yangshun:
   name: Yangshun Tay
   title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd

@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Markdown Tutorial',
-  tagline: 'Get up to speed with Markdown syntax',
+  title: 'Pawina\'s Knowledge Hub',
+  tagline: 'Personal documentation, projects, and professional insights',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -103,20 +103,20 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'Dog Blog',
+        title: 'Pawina\'s Hub',
         logo: {
-          alt: 'Dog Blog Logo',
+          alt: 'Pawina\'s Knowledge Hub',
           src: 'img/custom-logo.svg',
         },
         items: [
           {
-            to: '/docs/showcase',
-            label: 'Showcase',
+            to: '/docs/intro',
+            label: 'Documentation',
             position: 'left',
           },
           {
-            to: '/docs/intro',
-            label: 'Docs',
+            to: '/docs/showcase',
+            label: 'Projects',
             position: 'left',
           },
           {
@@ -126,23 +126,17 @@ const config = {
           },
           {
             to: '/docs/templates',
-            label: 'Templates',
+            label: 'Resources',
             position: 'left',
           },
           {
-            to: '/docs/enterprise',
-            label: 'Enterprise',
+            to: '/docs/learn',
+            label: 'Learning Notes',
             position: 'left',
           },
           {
             type: 'search',
             position: 'right',
-          },
-          {
-            to: '/docs/learn',
-            label: 'Learn',
-            position: 'right',
-            className: 'header-learn-link',
           },
           {
             href: 'https://github.com/Pawina85/notes',
